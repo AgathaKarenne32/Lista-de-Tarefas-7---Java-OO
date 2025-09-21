@@ -7,7 +7,7 @@ public class Principal {
     public static void main(String[] args) {
         List<IMeioTransporte> meiosDeTransporte = new ArrayList<>();
 
-        meiosDeTransporte.add(new Carro());
+        meiosDeTransporte.add(new Carro("Ford Ka", 180));
 
         for (IMeioTransporte meioTransporte : meiosDeTransporte) {
             try {

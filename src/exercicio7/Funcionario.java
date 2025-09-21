@@ -1,14 +1,16 @@
 package exercicio7;
 
-public class Funcionario implements Identificavel<String> {
-    private final String id;
-    private final String nome;
-    private final double cargo;
+import java.math.BigDecimal;
 
-    public Funcionario(String id, String nome, double cargo) {
+public class Funcionario implements Identificavel<String> {
+    private final String id; // Ex: matrícula "FUNC-001"
+    private final String nome;
+    private final BigDecimal salario; // Alterado de 'cargo' para 'salario' com BigDecimal
+
+    public Funcionario(String id, String nome, BigDecimal salario) {
         this.id = id;
         this.nome = nome;
-        this.cargo = cargo;
+        this.salario = salario;
     }
 
     @Override
@@ -20,7 +22,12 @@ public class Funcionario implements Identificavel<String> {
         return this.nome;
     }
 
-    public double getCargo() {
-        return this.cargo;
+    public BigDecimal getSalario() { // Alterado para getSalario
+        return this.salario;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Funcionario[ID=%s, Nome='%s', Salário=R$%.2f]", id, nome, salario);
     }
 }

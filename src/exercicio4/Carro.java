@@ -4,7 +4,7 @@ public class Carro implements IMeioTransporte{
     private int velocidade;
     private final int limiteVelocidade;
 
-    public Carro(){
+    public Carro(String fordKa, int i){
         this.velocidade = 0;
         this.limiteVelocidade = 180;
     }
