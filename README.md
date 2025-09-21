@@ -65,7 +65,7 @@ Este repositório contém uma coleção de 8 exercícios práticos desenvolvidos
 
 ## 🚀 Como Executar
 
-Cada exercício está em seu próprio pacote (`exercicio1`, `exercicio2`, etc.) e possui uma classe principal para demonstração (ex: `MainExercicio1.java`, `Principal.java`).
+Cada exercício está em seu próprio pacote (`exercicio1e2`, `exercicio7`, etc.) e possui uma classe principal para demonstração (ex: `Main`).
 
 1.  Clone o repositório.
 2.  Abra o projeto em sua IDE de preferência (ex: IntelliJ IDEA).
